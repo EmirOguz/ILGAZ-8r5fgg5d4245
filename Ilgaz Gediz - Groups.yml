@@ -1,0 +1,300 @@
+# TlgNET Internet Hizmetleri
+#
+# Emir Oguz Tarafindan Yazilmistir, Tum haklari saklidir.
+
+groups:
+  Oyuncu:
+    default: true
+    permissions:
+    - iConomy.holdings
+    - iConomy.top
+    - iConomy.payment
+    - iConomy.holdings.others
+    - samplekit.user
+    - jobs.use
+    - essentials.sethome
+    - essentials.home
+    - essentials.spawn
+    - essentials.back
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccpet
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - ChestShop.shop.create
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - samplekit.user
+    - superkits.list
+    - linkedchest.add
+    - linkedchest.remove
+    - linkedchest.list
+    - linkedchest.help
+    - linkedchest.unlink
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&f[&3Player&f]'
+      build: true
+      suffix: ''
+  Mimar:
+    default: false
+    permissions:
+    - worldedit.*
+    - worldguard.*
+    - iConomy.holdings
+    - iConomy.top
+    - iConomy.payment
+    - iConomy.holdings.others
+    - essentials.sethome
+    - essentials.home
+    - essentials.spawn
+    - essentials.back
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccpet
+    - essentials.tpdeny
+    - ChestShop.shop.create
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - superkits.kit.tools
+    - superkits.list
+    inheritance:
+    - default
+    - g:essentials_builder
+    - g:towny_builder
+    info:
+      prefix: ' &f[&2Mimar&f]'
+      build: true
+      suffix: ''
+  Moderator:
+    default: false
+    permissions:
+    - worldedit.*
+    - worldguard.*
+    - essentials.ban
+    - essentials.jail
+    - essentials.mute
+    - iConomy.holdings
+    - iConomy.top
+    - iConomy.payment
+    - iConomy.holdings.others
+    - essentials.sethome
+    - essentials.home
+    - essentials.spawn
+    - essentials.back
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccpet
+    - essentials.tpdeny
+    - ChestShop.shop.create
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - superkits.kit.tools
+    - superkits.list
+    inheritance:
+    - builder
+    - g:groupmanager_moderator
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:towny_moderator
+    - g:vanish_moderator
+    info:
+      prefix: ' &f[&5Moderator&f]'
+      build: true
+      suffix: ''
+  Admin:
+    default: false
+    permissions:
+    - '*'
+    inheritance:
+    - moderator
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:towny_admin
+    - g:vanish_admin
+    info:
+      prefix: ' &f[&aAdmin&f]'
+      build: true
+      suffix: ''
+  Kurucu:
+    default: false
+    permissions:
+    - '*'
+    - -vanish.*
+    inheritance:
+    - admin
+    info:
+      prefix: ' &f[&4Kurucu&f]'
+      build: true
+      suffix: ''
+  Rehber:
+    default: false
+    permissions:
+    - iConomy.holdings
+    - iConomy.top
+    - iConomy.payment
+    - iConomy.holdings.others
+    - samplekit.user
+    - jobs.use
+    - essentials.kick
+    - essentials.jail
+    - essentials.mute
+    - essentials.sethome
+    - essentials.home
+    - essentials.spawn
+    - essentials.back
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccpet
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - ChestShop.shop.create
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - samplekit.user
+    - superkits.list
+    - linkedchest.add
+    - linkedchest.remove
+    - linkedchest.list
+    - linkedchest.help
+    - linkedchest.unlink
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&f[&aRehber&f]'
+      build: true
+      suffix: ''
+  Gold:
+    default: false
+    permissions:
+    - essentials.repair
+    - essentials.feed
+    - iConomy.holdings
+    - iConomy.top
+    - iConomy.payment
+    - iConomy.holdings.others
+    - samplekit.user
+    - jobs.use
+    - essentials.sethome
+    - essentials.home
+    - essentials.spawn
+    - essentials.back
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccpet
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - ChestShop.shop.create
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - samplekit.user
+    - superkits.list
+    - linkedchest.add
+    - linkedchest.remove
+    - linkedchest.list
+    - linkedchest.help
+    - linkedchest.unlink
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&f[&eGold&f]'
+      build: true
+      suffix: ''
+  Dia:
+    default: false
+    permissions:
+    - SimpleVIPPerks.vipair
+    - essentials.repair
+    - essentials.feed
+    - iConomy.holdings
+    - iConomy.top
+    - iConomy.payment
+    - iConomy.holdings.others
+    - samplekit.user
+    - jobs.use
+    - essentials.sethome
+    - essentials.home
+    - essentials.spawn
+    - essentials.back
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccpet
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - ChestShop.shop.create
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - samplekit.user
+    - superkits.list
+    - linkedchest.add
+    - linkedchest.remove
+    - linkedchest.list
+    - linkedchest.help
+    - linkedchest.unlink
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&f[&bDiamond&f]'
+      build: true
+      suffix: ''
+  Emerald:
+    default: false
+    permissions:
+    - SimpleVIPPerks.vipdig
+    - SimpleVIPPerks.vipair
+    - essentials.repair
+    - essentials.feed
+    - iConomy.holdings
+    - iConomy.top
+    - iConomy.payment
+    - iConomy.holdings.others
+    - samplekit.user
+    - jobs.use
+    - essentials.sethome
+    - essentials.home
+    - essentials.spawn
+    - essentials.back
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccpet
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - ChestShop.shop.create
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - samplekit.user
+    - superkits.list
+    - linkedchest.add
+    - linkedchest.remove
+    - linkedchest.list
+    - linkedchest.help
+    - linkedchest.unlink
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&f[&aEmerald&f]'
+      build: true
+      suffix: ''
+
